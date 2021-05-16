@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+    background-image: url("ac.jpg");    
+}
+
+.grid{
+  padding-top: 40px;
+  display: grid;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3,150px);
+  grid-gap: 50px;
+  
+}
+/* items */
+
+.grid div {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+/*mantel:*/
+.item-a {
+    background-image: url("back_mantel.jpg");   
+    
+}
+.item-b {
+    background: #33a8a400;
+    background-image: url("back_mantel.jpg");  
+    /* background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80%;  */
+    background-clip: content-box;
+    padding: 10px;
+}
+.item-c {
+    background-image: url("back_mantel.jpg");
+    background-size: cover;   
+}
+.item-d {
+    background: #e7e6e6;
+    background-image: url("back_mantel.jpg");  
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80%;
+}
+
+/*persona:*/
+.item-e {
+    background-image: url("dh.jpg");  
+    background-size: cover;
+}
+.item-f {
+    background: #ffffff;
+    background-image: url("dh.jpg");  
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80%;
+}
+.item-g {
+    background: #ffffff;
+    background-image: url("dh_2.jpg"); 
+    background-size: contain; 
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.item-h {
+    background: #ffffff;
+    background-image: url("dh_3.jpg");  
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/*degradado:*/
+.item-i {
+    background-image: linear-gradient(to left, rgb(15, 14, 14) 0%, rgb(176, 223, 66) 100%);
+
+}
+
+.item-j {
+background-image: linear-gradient(to bottom, rgb(230, 222, 222) 10%, rgb(230, 178, 82) 100%);
+}
+.item-k {
+    background-image: linear-gradient(to top, white 0%, rgb(87, 226, 69) 100%);
+}
+.item-l {
+    background-image: linear-gradient(to bottom, rgba(113, 207, 36, 0.329), green 100%);
+}
